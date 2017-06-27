@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/test.css" />
+		<style>
+
+
+		</style>
+		<script type="text/javascript" src="js/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="js/common.js">
+		</script>
+	</head>
+
+	<body>
+		<div id="wrapbox">
+			<!--hours-->
+			<div id="my3dspace-h">
+				<div id="pagegroup-h">
+					<div class="page" id="pageh1">ready</div>
+					<div class="page" id="pageh2">go</div>
+
+				</div>
+			</div>
+			<!--minutes-->
+			<div id="my3dspace-m">
+				<div id="pagegroup-m">
+					<div class="page" id="pagem1">ready</div>
+					<div class="page" id="pagem2">go</div>
+
+				</div>
+			</div>
+			<!--seconds-->
+			<div id="my3dspace">
+				<div id="pagegroup">
+					<div class="page" id="page1">ready</div>
+					<div class="page" id="page2">go</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<script>
+			var curIndex = 1;
+			//向后翻页
+			function next() {
+
+				var curPage = document.getElementById('page' + curIndex);
+				curPage.style.webkitTransform = "rotateX(-90deg)";
+
+				curIndex++;
+				var nextPage = document.getElementById('page' + curIndex);
+				nextPage.style.webkitTransform = "rotateX(0deg)";
+			}
+			//翻页分
+			var curIndexm = 1;
+
+			function nextm() {
+				var curPagem = document.getElementById('pagem' + curIndexm);
+				//				console.log(curPagem)
+				curPagem.style.webkitTransform = "rotateX(-90deg)";
+
+				curIndexm++;
+				var nextPagem = document.getElementById('pagem' + curIndexm);
+				nextPagem.style.webkitTransform = "rotateX(0deg)";
+			}
+			//翻页小时
+			var curIndexh = 1;
+
+			function nexth() {
+				var curPageh = document.getElementById('pageh' + curIndexh);
+
+				curPageh.style.webkitTransform = "rotateX(-90deg)";
+
+				curIndexh++;
+				var nextPageh = document.getElementById('pageh' + curIndexh);
+				nextPageh.style.webkitTransform = "rotateX(0deg)";
+			}
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				var num = 3;
+				var numm = 3;
+				var numh = 3;
+
+				var s;
+				var m;
+				var h;
+				//				设置时间
+				setInterval(function() {
+					var myDate = new Date();
+					s = myDate.getSeconds();
+					m = myDate.getMinutes();
+					h = myDate.getHours();
+
+				}, 1000);
+				//生成页面
+				clearInterval();
+				var timer = setInterval(function() {
+					var newDiv = '<div class="page" id="page' + num + '">' + s + '</div>';
+					$('#pagegroup').append(newDiv);
+
+					//					分
+					var newDivm = '<div class="page" id="pagem' + numm + '">' + m + '</div>';
+					$('#pagegroup-m').append(newDivm);
+					//					时
+					var newDivh = '<div class="page" id="pageh' + numh + '">' + h + '</div>';
+					$('#pagegroup-h').append(newDivh);
+					numh++;
+					numm++;
+					num++;
+				}, 1000);
+				//翻页
+				clearInterval();
+				setInterval(function() {
+					next();
+					nextm()
+					nexth();
+
+				}, 1000);
+
+			})
+		</script>
+
+	</body>
+
+</html>

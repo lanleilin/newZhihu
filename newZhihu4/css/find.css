@@ -1,0 +1,53 @@
+#find-hook {
+  width: 100%;
+}
+#find-hook div {
+  width: 6.4rem;
+  height: 13.52rem;
+  padding: 0.4rem;
+  display: inline-block;
+  clear: both;
+}
+#find-hook div img {
+  width: 6.08rem;
+  height: 8rem;
+}
+#find-hook div span {
+  width: 100%;
+  display: inline-block;
+  font-size: 0.56rem;
+  font-family: "arial black";
+  color: darkgray;
+  padding-left: 0.4rem;
+}
+#find-dialog-hook div {
+  width: 100%;
+  font-size: 0.68rem;
+  padding: 0.4rem;
+}
+#find-dialog-hook div ul {
+  width: 14.2rem;
+  border: 1px solid darkgray;
+  border-left: none;
+  border-right: none;
+  border-radius: 6px;
+}
+#find-dialog-hook div ul li {
+  width: 100%;
+  padding: 0.1rem;
+}
+#find-dialog-hook div ul li span {
+  font-size: 0.64rem;
+  width: 40%;
+  display: inline-block;
+  color: #0f88eb;
+}
+#find-dialog-hook div ul li p {
+  line-height: 1.7;
+  font-size: 0.56rem;
+}
+#find-dialog-hook {
+  position: absolute;
+  top: 0;
+  background: lightgray;
+}

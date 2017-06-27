@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>N-发现</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/homePage.css" />
+		<link rel="stylesheet" type="text/css" href="css/find.css"/>
+		<script type="text/javascript" src="js/common.js">
+		</script>
+
+		<script type="text/javascript" src="js/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="js/home.js">
+		</script>
+		<script type="text/javascript" src="js/find.js">
+			
+		</script>
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<nav id="header">
+			<a href="#" id="logo">
+				<img src="img/slicedImg/zhihu-logo.png" />
+			</a>
+			<form action="" id="search">
+				<input type="text" name="" id="searchInput" value="" placeholder="搜索你感兴趣的内容" />
+				<span>
+						<img src="img/icon/搜索.svg"/>
+					</span>
+			</form>
+			<button id="ask">提问</button>
+		</nav>
+		<div id="top-nav">
+			<ul>
+				<li>
+					<a href="homePage.html">首页</a>
+				</li>
+				<li>
+					<a href="theme.html">话题</a>
+				</li>
+				<li>
+					<a href="find.html">发现</a>
+				</li>
+				<li>
+					<a href="message.html">消息
+						<span></span>
+					</a>
+				</li>
+				<li id="showSet">
+					<a href="#">我
+						<span></span>
+					</a>
+				</li>
+
+			</ul>
+
+		</div>
+		<ul id="me">
+			<li>我的主页</li>
+			<li id="privateMessage">
+				<a href="message.html">私信</a>
+			</li>
+			<li>设置</li>
+			<li id="signout">退出</li>
+			<li id="up"><img src="img/icon/arrow.svg" /></li>
+		</ul>
+		<div id="home-list-title">
+			<div id="list-title-wrap">
+				<a href="#">
+					<img src="img/icon/nav-list.svg" />
+					<p>编辑推荐</p>
+				</a>
+				<p>
+					<span>更多</span>
+					
+					<img src="img/icon/more.svg" />
+
+				</p>
+			</div>
+		</div>
+		<div class="feed-item">
+	<div class="wrap">
+		<div class="item-source">
+			<p>精选推荐</p>
+			<a href="#">人文社科</a>
+			<a href="#">工程科学</a>
+			<span class="item-avatar">
+						<img src="img/slicedImg/185d9c33d_m.jpg"/>
+					</span>
+		</div>
+		<h2 class="item-title">
+					<a href="#">零度可口可乐热量为零吗？
+					</a>
+				</h2>
+		<p class="username">
+			<span class="name">莎士比亚</span>
+			<span class="signature">to be or not to be</span>
+		</p>
+		<div class="item-contents">
+			<p>如果类似CAD，应该是处理矢量图而不是位图。有个开源的软件Inkscape，可以参考一下：https://inkscape.org/en/如果性能不是问题，哪种语言熟悉用哪种语言好了。运行效率 C++>C#>Java。界面用C#开发最快捷，但是Java也可以做，用C++开发比较累。用哪种好取决于你们对哪个语言更熟悉。底层的图形处理算法。用C++效率最高，C#也应该可以搞定，Java性能会有点问题，如果实在要用Java可以采用Java UI + C++底层来解决。
+			</p>
+		</div>
+		<div class="item-contents-show">
+			<!--<p>如果类似CAD，应该是处理矢量图而不是位图。有个开源的软件Inkscape，可以参考一下：https://inkscape.org/en/如果性能不是问题，哪种语言熟悉用哪种语言好了。运行效率 C++>C#>Java。界面用C#开发最快捷，但是Java也可以做，用C++开发比较要...-->
+				<!--<span>显示全部</span>-->
+			</p>
+		</div>
+		<div class="item-bottom">
+			<p class="like">
+				<span>37</span> 已购买
+			</p>
+			<p class="followQuestion">
+				<span>+</span> 收藏书籍
+			</p>
+			<p class="comments">
+				<span>
+							<img src="img/icon/comments.svg"/>
+						</span>
+				<span>17</span> 条评论
+			</p>
+			<p class="thanks">
+				<span>
+							<img src="img/icon/感谢icon.svg"/>
+				</span> 赞一个
+			</p>
+			<p class="favorite">
+				<span>...</span>
+			</p>
+			<p class="right">
+				<span>·</span> 版权所有
+			</p>
+		</div>
+	</div>
+</div>
+		<!--test-->
+		<div id="find-hook">
+			<!--begin-->
+			<div class="find-book-wrap" id="find-book1">
+				<img src="img/slicedImg/v2-d292446c15da272e19b7b9d7df6e8dbf_200x0.jpg"/>
+				<span id="find-title">烘焙的美好时光</span>
+				<span id="find-author">
+					SansanL 等
+				</span>
+				<span id="find-publisher">
+					知乎周刊
+				</span>
+			</div>
+			<div class="find-book-wrap" id="find-book2">
+				<img src="img/slicedImg/v2-e34a4c1b41af780726bf1b94ba30dd5e_200x0.jpg"/>
+				<span id="find-title">烘焙的美好时光</span>
+				<span id="find-author">
+					SansanL 等
+				</span>
+				<span id="find-publisher">
+					知乎周刊
+				</span>
+			</div>
+			<!--begin-->
+			
+			
+		</div>
+		<!--second item-->
+		<footer class="n-footer">
+			<div class="wrap">
+				<p class="cover"></p>
+				<a href="#" class="more" id="find-load">更多</a>
+				<ul>
+					<li>
+						<a href="#">
+							<span>
+						<img src="img/icon/标签.svg"/>
+					</span> 我购买的书籍
+							<hahaha>7</hahaha>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>
+						<img src="img/icon/标签.svg"/>
+					</span> 特价
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>
+						<img src="img/icon/标签.svg"/>
+					</span> 分类
+						</a>
+					</li>
+				</ul>
+				
+
+			</div>
+		</footer>
+<!--<div id="find-dialog">
+	<ul>
+		<li><span>价格</span> <span>100</span> </li>
+		<li><span>页数</span><span>100</span> </li>
+		<li><span>导读</span>
+			<p>"猪每天都在拼命摇着尾巴。新鲜人、老菜鸟，如果你每天忙忙碌碌，但手上的工作仍然杂乱无章，那么请先停一停，别忙着和猪一起摇尾巴。猪在摇着尾巴，既不能驱赶蚊蝇，也不能向主人表明热情，可是猪依然每天拼命地摇着尾巴。它的悲哀在于——不明白自己的动作毫无价值。 生活需要技巧，工作当然也不例外。不妨将我们的职场生涯比喻成一场人生的舞会，管它是探戈还是华尔兹，为人下属者总得配合自己的老板，把这一曲跳完。你是“舞技高超”，还是脚步错乱，甚至发生误踏对方晶亮皮鞋的尴尬？如果你不幸属于后者，那么你一定非常急于走出窘境。工作的方法不当，就犹如跟猪一起摇尾巴，毫无价值可言。本书就是那堵写满了工作窍门的墙。细细品味书中那些生动有趣的小故事，不难发现在那些故事里蕴藏着工作中不可缺少的处事哲学。"</p>
+		</li>
+		<li><span>目录</span>
+			<p>第1章 讲求效率↵1 煎鱼的启示↵2 董遇的“三余”↵3 达尔文的书↵4 茶师与儿子↵5 学会说“不”↵……↵第2章 善于思考↵……↵第3章 把握机遇↵……↵第4章 心态健康↵……↵第5章 脚踏实地↵……</p>
+		</li>
+	</ul>
+</div>-->
+<div id="find-dialog-hook">
+	<!--this is hook-->
+	<!--<div id="find-dialog">
+	<ul>
+		<li><span>价格</span> <span>100</span> </li>
+		<li><span>页数</span><span>100</span> </li>
+		<li><span>导读</span>
+			<p>"猪每天都在拼命摇着尾巴。新鲜人、老菜鸟，如果你每天忙忙碌碌，但手上的工作仍然杂乱无章，那么请先停一停，别忙着和猪一起摇尾巴。猪在摇着尾巴，既不能驱赶蚊蝇，也不能向主人表明热情，可是猪依然每天拼命地摇着尾巴。它的悲哀在于——不明白自己的动作毫无价值。 生活需要技巧，工作当然也不例外。不妨将我们的职场生涯比喻成一场人生的舞会，管它是探戈还是华尔兹，为人下属者总得配合自己的老板，把这一曲跳完。你是“舞技高超”，还是脚步错乱，甚至发生误踏对方晶亮皮鞋的尴尬？如果你不幸属于后者，那么你一定非常急于走出窘境。工作的方法不当，就犹如跟猪一起摇尾巴，毫无价值可言。本书就是那堵写满了工作窍门的墙。细细品味书中那些生动有趣的小故事，不难发现在那些故事里蕴藏着工作中不可缺少的处事哲学。"</p>
+		</li>
+		<li><span>目录</span>
+			<p>第1章 讲求效率↵1 煎鱼的启示↵2 董遇的“三余”↵3 达尔文的书↵4 茶师与儿子↵5 学会说“不”↵……↵第2章 善于思考↵……↵第3章 把握机遇↵……↵第4章 心态健康↵……↵第5章 脚踏实地↵……</p>
+		</li>
+	</ul>
+</div>-->
+</div>
+	</body>
+
+</html>

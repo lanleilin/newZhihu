@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>N-话题</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/homePage.css" />
+		<link rel="stylesheet" type="text/css" href="css/theme.css" />
+		<link rel="stylesheet" type="text/css" href="css/message.css" />
+		<script type="text/javascript" src="js/common.js">
+		</script>
+
+		<script type="text/javascript" src="js/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="js/home.js">
+		</script>
+		<script type="text/javascript" src="js/theme.js">
+		</script>
+		<script type="text/javascript" src="js/mainFuc.js">
+		</script>
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<nav id="header">
+			<a href="#" id="logo">
+				<img src="img/slicedImg/zhihu-logo.png" />
+			</a>
+			<form action="" id="search">
+				<input type="text" name="" id="searchInput" value="" placeholder="搜索你感兴趣的内容" />
+				<span>
+						<img src="img/icon/搜索.svg"/>
+					</span>
+			</form>
+			<button id="ask">提问</button>
+		</nav>
+		<div id="top-nav">
+			<ul>
+				<li>
+					<a href="homePage.html">首页</a>
+				</li>
+				<li>
+					<a href="theme.html">话题</a>
+				</li>
+				<li>
+					<a href="find.html">发现</a>
+				</li>
+				<li>
+					<a href="message.html">消息
+						<span></span>
+					</a>
+				</li>
+				<li id="showSet">
+					<a href="#">我
+						<span></span>
+					</a>
+				</li>
+
+			</ul>
+
+		</div>
+		<ul id="me">
+			<li><a href="person.html">我的主页</a></li>
+			<li id="privateMessage">
+				<a href="message.html">私信</a>
+			</li>
+			<li>设置</li>
+			<li id="signout">退出</li>
+			<li id="up"><img src="img/icon/arrow.svg" /></li>
+		</ul>
+		<div id="home-list-title">
+			<div id="list-title-wrap">
+				<a href="#">
+					<img src="img/icon/nav-list.svg" />
+					<p>已有功能</p>
+				</a>
+				<p>
+					<span>更多</span>
+
+					<img src="img/icon/more.svg" />
+
+				</p>
+			</div>
+		</div>
+		<!--  appstore-->
+		<div class="feed-item">
+			<div class="wrap">
+				<ul id="appstore">
+					<li>
+						<p class="theme-active">
+							<span class="left"></span>
+							<a href="#" id="theme-active">Google Chrome</a>
+							<span class="right"></span>
+						</p>
+						<p>
+							<span class="left"></span>
+							<a href="#">C</a>
+							<span class="right"></span>
+						</p>
+
+					</li>
+					<li>
+						<p>
+							<span class="left"></span>
+							<a href="#">G</a>
+							<span class="right"></span>
+						</p>
+						<p>
+							<span class="left"></span>
+							<a href="#">C</a>
+							<span class="right"></span>
+						</p>
+						<p id="theme-weather">
+							<span class="left"></span>
+							<a href="#">天气</a>
+							<span class="right"></span>
+						</p>
+
+					</li>
+					<li>
+						<p>
+							<span class="left"></span>
+							<a href="#">Google</a>
+							<span class="right"></span>
+						</p>
+						<p>
+							<span class="left"></span>
+							<a href="#">photoshop</a>
+							<span class="right"></span>
+						</p>
+
+					</li>
+					<li>
+						<p id="theme-baidu">
+							<span class="left"></span>
+							<a href="#">百度</a>
+							<span class="right"></span>
+						</p>
+						<p id='theme-time'>
+							<span class="left"></span>
+							<a href="#">时间</a>
+							<span class="right"></span>
+						</p>
+						<p>
+							<span class="left"></span>
+							<a href="#">Microsoft Windows</a>
+							<span class="right"></span>
+						</p>
+
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="feed-item">
+			<div class="wrap">
+				<div class="item-source">
+					<p class="likeName">兰尼斯特</p>
+					<span class="liked">赞了</span>
+					<a href="#" class="zhuanlan-name">塔格利安</a>
+					<span class="article-de">中的文章</span>
+					<a href="#" class="oneDayAgo"><b>·</b> 2 天前</a>
+					<span class="item-avatar">
+						<img src="img/slicedImg/7be980a0f_m.jpg"/>
+					</span>
+				</div>
+				<h2 class="item-title">
+					<a href="#">网速快的国家/地区，能达到多快的网速？
+					</a>
+				</h2>
+				<p class="username">
+					<span class="name">奇偶南瓜</span>
+					<span class="signature">网络话题优秀回答者</span>
+				</p>
+				<div class="item-contents">
+					<p>
+
+						如果类似CAD，应该是处理矢量图而不是位图。有个开源的软件Inkscape，可以参考一下：https://inkscape.org/en/如果性能不是问题，哪种语言熟悉用哪种语言好了。运行效率 C++>C#>Java。界面用C#开发最快捷，但是Java也可以做，用C++开发比较累。用哪种好取决于你们对哪个语言更熟悉。底层的图形处理算法。用C++效率最高，C#也应该可以搞定，Java性能会有点问题，如果实在要用Java可以采用Java UI + C++底层来解决。
+					</p>
+				</div>
+				<div class="item-contents-show">
+					<p>
+						<span class="item-contents-imgContainer">
+							<img src="img/slicedImg/v2-9f779d41608f6b4b62c75b597dde9f1e_b.jpg"/>
+						</span>
+						<b>全球平均网速为 580KBps；韩国是地球上网速最快的国家， 高达2202KBps；全球网速最快的 6 个城市都在韩国；地球上网速最快的 10 个国家中，其实没几个发达国家。日本算是发达国家中最快的了，为1364KBps；美国网速为 616KBps，仅列第 26 位。落后于罗马尼亚等东欧国家；中国网速为 245KBps；香港特区的网速高居全球第 10 位</b>
+
+						<span>显示全部</span>
+					</p>
+				</div>
+				<div class="item-bottom">
+					<p class="like">
+						<span>37</span> 赞同
+					</p>
+					<p class="followQuestion">
+						<!--<span>+</span>-->
+						关注专栏
+					</p>
+					<p class="comments">
+						<!--<span>
+							<img src="img/icon/comments.svg"/>
+						</span>-->
+						<span>94</span> 条评论
+					</p>
+					<p class="thanks">
+						<span>
+							<!--<img src="img/icon/感谢icon.svg"/>-->
+							<b>·</b>
+						</span> 分享
+					</p>
+					<p class="favorite">
+						<span><b>·</b> 举报</span>
+					</p>
+					<p class="right">
+						<span>·</span> 去往文章页
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--对话框-->
+		<div class="msg-dialog" id="theme-dialog-hide">
+			<ul>
+				<li>发现更多
+					<span id="theme-dialog-close">
+					<img src="img/icon/close(2).svg"/>
+				</span>
+				</li>
+				<li>搜索<input type="text" placeholder="搜索你感兴趣的内容" id="theme-baidu-search" /> </li>
+				<li>
+					<ul id="theme-info-container"></ul>
+
+				</li>
+			</ul>
+
+		</div>
+		<!--天气对话框-->
+		<div id="theme-weather-box">
+            <input type="text" placeholder="请输入你要查询的城市" id="theme-weather-text" />
+            <input type="button" value="查询" id="theme-weather-btn" />
+            <ul id="theme-weather-ul">
+            </ul>
+            <span id="theme-weather-close">
+            	关闭
+            </span>
+        </div>
+        <!--时钟-->
+        <div id="wrapbox">
+			<!--hours-->
+			<div id="my3dspace-h">
+				<div id="pagegroup-h">
+					<div class="page" id="pageh1">ready</div>
+					<div class="page" id="pageh2">go</div>
+
+				</div>
+			</div>
+			<!--minutes-->
+			<div id="my3dspace-m">
+				<div id="pagegroup-m">
+					<div class="page" id="pagem1">ready</div>
+					<div class="page" id="pagem2">go</div>
+
+				</div>
+			</div>
+			<!--seconds-->
+			<div id="my3dspace">
+				<div id="pagegroup">
+					<div class="page" id="page1">ready</div>
+					<div class="page" id="page2">go</div>
+
+				</div>
+			</div>
+		</div>
+        
+        
+	</body>
+
+</html>

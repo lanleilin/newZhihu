@@ -1,0 +1,67 @@
+#wrapbox {
+  width: 100%;
+  padding-left: 0.4rem;
+}
+#wrapbox div {
+  display: inline-block;
+  float: left;
+  margin: 0.2rem;
+}
+/*hours*/
+#my3dspace-h {
+  -webkit-perspective: 400;
+  -webkit-perspective-origin: 50% 50%;
+  overflow: hidden;
+}
+#pagegroup-h {
+  width: 200px;
+  height: 200px;
+  /*margin: 0 auto;*/
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+/*minutes*/
+#my3dspace-m {
+  -webkit-perspective: 400;
+  -webkit-perspective-origin: 50% 50%;
+  overflow: hidden;
+}
+#pagegroup-m {
+  width: 200px;
+  height: 200px;
+  /*margin: 0 auto;*/
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+/*seconds*/
+#my3dspace {
+  -webkit-perspective: 400;
+  /*-webkit-perspective-origin: 50% 50%;*/
+  overflow: hidden;
+}
+#pagegroup {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+.page {
+  width: 200px;
+  height: 200px;
+  /*padding: 10px;*/
+  background-color: #0070CD;
+  color: #fff;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 200px;
+  text-align: center;
+  position: absolute;
+  -webkit-transform-origin: bottom;
+  -webkit-transition: -webkit-transform 1s linear;
+  -webkit-transform: rotateX(90deg);
+}
+#page1 {
+  -webkit-transform-origin: bottom;
+  -webkit-transition: -webkit-transform 1s linear;
+}

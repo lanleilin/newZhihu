@@ -1,0 +1,138 @@
+.person-msg-harass {
+  width: 100%;
+  float: left;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.person-msg-harass p {
+  height: 1.92rem;
+  width: 13.8rem;
+  margin: 0 auto;
+  border: 1px solid #adcf66;
+  background: #f2fddb;
+  text-align: center;
+  line-height: 1.92rem;
+  font-size: 0.56rem;
+}
+#person-hook {
+  width: 100%;
+}
+#person-hook div {
+  width: 13.4rem;
+  height: 6.24rem;
+  padding: 0.44rem;
+  border: 1px solid #eeeeee;
+  margin: 0 auto;
+  border-radius: 6px;
+  margin-bottom: 0.2rem;
+}
+#person-hook div img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 7px;
+  float: left;
+  margin-right: 0.68rem;
+}
+#person-hook div span {
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: #055fb9;
+}
+#person-hook div p {
+  font-size: 0.8rem;
+  color: #666666;
+}
+#person-hook div button {
+  float: right;
+  box-shadow: none;
+  width: 3.16rem;
+  height: 0.88rem;
+  background: #eeeeee;
+  text-align: center;
+  line-height: 0.88rem;
+  color: #888888;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  outline: none;
+}
+#person-aboutme {
+  width: 100%;
+  margin-bottom: 0.2rem;
+}
+#person-aboutme div {
+  width: 14.2rem;
+  height: 6.24rem;
+  padding: 0.44rem;
+  border: 1px dashed #eeeeee;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+#person-aboutme div img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 7px;
+  float: left;
+  margin-right: 0.68rem;
+}
+#person-aboutme div span {
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: #055fb9;
+}
+#person-aboutme div p {
+  font-size: 0.8rem;
+  color: #666666;
+}
+#person-aboutme div button {
+  float: right;
+  box-shadow: none;
+  width: 3.16rem;
+  height: 0.88rem;
+  background: #eeeeee;
+  text-align: center;
+  line-height: 0.88rem;
+  color: #888888;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  outline: none;
+}
+#person-list {
+  width: 100%;
+  margin-bottom: 0.4rem;
+  padding-top: 0.2rem;
+}
+#person-list div {
+  width: 14.2rem;
+  margin: 0 auto;
+}
+#person-list ul {
+  width: 100%;
+  height: 11.12rem;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#person-list ul li {
+  width: 100%;
+  height: 1.88rem;
+  font-size: 0.6rem;
+  color: #666666;
+  font-weight: bold;
+  padding-left: 1.28rem;
+  line-height: 1.88rem;
+}
+#person-list ul li span {
+  height: 100%;
+  color: #999999;
+  font-size: 0.56rem;
+  padding-left: 0.2rem;
+  line-height: 1.88rem;
+  font-weight: normal;
+}
+#person-list ul li:nth-child(1) {
+  background: #f7f7f7;
+}
+#person-list ul li:nth-child(1) img {
+  width: 0.72rem;
+  height: 0.72rem;
+}

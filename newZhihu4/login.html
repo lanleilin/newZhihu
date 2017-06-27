@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>N-登录</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<!--<script type="text/javascript" src="js/common.js"></script>-->
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="jumbotron">
+			<div class="container-fluid">
+				<h1 class="loginZhihu" id="login-logo"><img src="img/slicedImg/logo@2x.e4e2b466.png"/></h1>
+				<h4 class="loginZhihu" id="login-subtitle">与世界分享你的知识、经验和见解</h4>
+				<div class="container">
+					<p class="loginZhihu">
+						<a href="#" class="btn btn-lg btn-primary smLogin" id="login-signup-btn">注册</a>
+						<a href="#" class="btn btn-lg btn-default smLogin" id="login-login-btn">登录</a>
+					</p>
+				</div>
+				<div class="input-group">
+					<!--<span class="input-group-addon">用户名</span>-->
+					<input type="text" class="form-control" placeholder="姓名" id="myUsername" />
+					<input type="text" class="form-control" placeholder="l-姓名" id="l-myUsername" />
+					
+				<span id="nameInf">实名注册</span>
+				</div>
+
+
+				<div class="input-group">
+					<input type="number" class="form-control" placeholder="手机号" id="myTel" />
+				<span id="mobileInf" class="fon">手机号必须为数字</span>
+					
+				</div>
+
+				<div class="input-group">
+					<input type="password" class="form-control" placeholder="密码" id="myPassword" />
+					<input type="password" class="form-control" placeholder="l-密码" id="l-myPassword" />
+					
+				<span id="pwInf" class="fon">密码不能为空</span>
+					
+				</div>
+
+				
+				<div class="container">
+					<p class="loginZhihu">
+						<a href="#" class="btn btn-lg btn-primary smLogin" id="btSignup">注册</a>
+
+					</p>
+					<p class="loginZhihu">
+						<a href="#" class="btn btn-lg btn-primary smLogin" id="btLogin">登录</a>
+
+					</p>
+				</div>
+				<div class="container" id="verifiCode">
+
+					<p class="navbar-right lessHalf">无法登录？</p>
+					<p class="navbar-left lessHalf" id="fontS">手机验证码登录</p>
+
+					<p class="lessHalf">社交账号登录</p>
+				</div>
+
+				<div class="container">
+					<p id="login-protocal">点击「注册」按钮，即代表你同意 <a href="">《知乎议协》</a></p>
+					
+				</div>
+			</div>
+		</div>
+
+		<!--<span id="inf">this is infomation</span>-->
+		</div>
+
+		<div class="container">
+			<div class="nav navbar navbar-fixed-bottom bfont">
+				
+				<div class="col-xs-4 bfont">
+					<a href="#" id="clr">@2017知乎清除 </a>
+				</div>
+				
+				<div class="col-xs-4 bfont">
+					<a href="#" id="info">联系我们</a>
+					<!--<p id="info">infomation</p>-->
+				</div>
+				<div class="col-xs-4 bfont">
+					<a href="#">使用机构帐号登录</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

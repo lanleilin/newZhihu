@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>N-首页</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/homePage.css" />
+		<script type="text/javascript" src="js/common.js">
+			
+		</script>
+		<script>
+//			(function() {
+//				var html = document.documentElement;
+//				var hWidth = html.getBoundingClientRect().width;
+//				//				console.log(hWidth);
+//				html.style.fontSize = hWidth / 15 + "px"; //设置默认字符大小 25
+//				var a = html.style.fontSize;
+//				//				console.log(a);
+//			})();
+		</script>
+		<script type="text/javascript" src="js/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="js/home.js">
+		</script>
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<nav id="header">
+			<a href="#" id="logo">
+				<img src="img/slicedImg/zhihu-logo.png" />
+			</a>
+			<form action="" id="search">
+				<input type="text" name="" id="searchInput" value="" placeholder="搜索你感兴趣的内容" />
+				<span>
+						<img src="img/icon/搜索.svg"/>
+					</span>
+			</form>
+			<button id="ask">提问</button>
+		</nav>
+		<div id="top-nav">
+			<ul>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="theme.html">话题</a>
+				</li>
+				<li>
+					<a href="find.html">发现</a>
+				</li>
+				<li>
+					<a href="message.html">消息
+						<span></span>
+					</a>
+				</li>
+				<li id="showSet">
+					<a href="#">我
+						<span></span>
+					</a>
+				</li>
+
+			</ul>
+
+		</div>
+		<ul id="me">
+			<li><a href="person.html">我的主页</a> </li>
+			<li id="privateMessage"><a href="message.html">私信</a> </li>
+			<li>设置</li>
+			<li id="signout">退出</li>
+			<li id="up"><img src="img/icon/arrow.svg"/></li>
+		</ul>
+		<div id="home-list-title">
+			<div id="list-title-wrap">
+				<a href="#">
+					<img src="img/icon/nav-list.svg" />
+					<p>最新动态</p>
+				</a>
+				<p>
+					<img src="img/icon/set.svg" />
+					<span>设置</span>
+				</p>
+			</div>
+		</div>
+		<div class="feed-item">
+			<div class="wrap">
+				<div class="item-source">
+					<p>来自话题</p>
+					<a href="#">软件开发</a>
+					<a href="#">编程语言</a>
+					<span class="item-avatar">
+						<img src="img/slicedImg/185d9c33d_m.jpg"/>
+					</span>
+				</div>
+				<h2 class="item-title">
+					<a href="#">如果抛开团队情况，在C#、C++、Java三者中间选择一门语言，做一款绘图软件，哪一门语言更适合？
+					</a>
+				</h2>
+				<p class="username">
+					<span class="name">eudemonia</span>
+					<span class="signature">say hello</span>
+				</p>
+				<div class="item-contents" id="home-show-all">
+					<p>如果类似CAD，应该是处理矢量图而不是位图。有个开源的软件Inkscape，可以参考一下：https://inkscape.org/en/如果性能不是问题，哪种语言熟悉用哪种语言好了。运行效率 C++>C#>Java。界面用C#开发最快捷，但是Java也可以做，用C++开发比较累。用哪种好取决于你们对哪个语言更熟悉。底层的图形处理算法。用C++效率最高，C#也应该可以搞定，Java性能会有点问题，如果实在要用Java可以采用Java UI + C++底层来解决。
+					
+					</p>
+					<span id="home-close-contents">
+						收起
+					</span>
+				</div>
+				<div class="item-contents-show" id="home-show-part">
+					<p>如果类似CAD，应该是处理矢量图而不是位图。有个开源的软件Inkscape，可以参考一下：https://inkscape.org/en/如果性能不是问题，哪种语言熟悉用哪种语言好了。运行效率 C++>C#>Java。界面用C#开发最快捷，但是Java也可以做，用C++开发比较要...
+						<span id="home-show-btn">显示全部</span>
+					</p>
+				</div>
+				<div class="item-bottom">
+					<p class="like">
+						<span>12</span> 赞同
+					</p>
+					<p class="followQuestion">
+						<span>+</span> 关注问题
+					</p>
+					<p class="comments">
+						<span>
+							<img src="img/icon/comments.svg"/>
+						</span>
+						<span>44</span> 条评论
+					</p>
+					<p class="thanks">
+						<span>
+							<img src="img/icon/感谢icon.svg"/>
+						</span> 感谢
+					</p>
+					<p class="favorite">
+						<span>...</span>
+					</p>
+					<p class="right">
+						<span>·</span> 作者保留权利
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--second item-->
+		<div class="feed-item">
+			<div class="wrap">
+				<div class="item-source">
+					<p class="likeName">任树正</p>
+					<span class="liked">赞了</span>
+					<a href="#" class="zhuanlan-name">触乐</a>
+					<span class="article-de">中的文章</span>
+					<a href="#" class="oneDayAgo"><b>·</b> 1 天前</a>
+					<span class="item-avatar">
+						<img src="img/slicedImg/7be980a0f_m.jpg"/>
+					</span>
+				</div>
+				<h2 class="item-title">
+					<a href="#">在三和玩游戏的人们
+					</a>
+				</h2>
+				<p class="username">
+					<span class="name">触乐</span>
+					<span class="signature">游戏话题优秀回答者</span>
+				</p>
+				<div class="item-contents">
+					<p>
+
+						如果类似CAD，应该是处理矢量图而不是位图。有个开源的软件Inkscape，可以参考一下：https://inkscape.org/en/如果性能不是问题，哪种语言熟悉用哪种语言好了。运行效率 C++>C#>Java。界面用C#开发最快捷，但是Java也可以做，用C++开发比较累。用哪种好取决于你们对哪个语言更熟悉。底层的图形处理算法。用C++效率最高，C#也应该可以搞定，Java性能会有点问题，如果实在要用Java可以采用Java UI + C++底层来解决。
+					</p>
+				</div>
+				<div class="item-contents-show">
+					<p>
+						<span class="item-contents-imgContainer">
+							<img src="img/slicedImg/v2-bc4b4fba31b2b1a29b5a0c9b1a2b3523_200x112.jpg"/>
+						</span>
+						<b>你也许第一次听说三和，但在网络上，三和早已鼎鼎大名。三和市场位于深圳市龙华新区景乐新村北区。在它周围，凭借着低廉的生活成本，这里成为了低收入人群的乐土。</b> 编辑丨杨中依（知乎ID ） 你也许第一次听说三和人力市场，但在网络上，三和早已鼎鼎…
+
+						<span>显示全部</span>
+					</p>
+				</div>
+				<div class="item-bottom">
+					<p class="like">
+						<span>12</span> 赞同
+					</p>
+					<p class="followQuestion">
+						<!--<span>+</span>-->
+						关注专栏
+					</p>
+					<p class="comments">
+						<!--<span>
+							<img src="img/icon/comments.svg"/>
+						</span>-->
+						<span>44</span> 条评论
+					</p>
+					<p class="thanks">
+						<span>
+							<!--<img src="img/icon/感谢icon.svg"/>-->
+							<b>·</b>
+						</span> 分享
+					</p>
+					<p class="favorite">
+						<span><b>·</b> 举报</span>
+					</p>
+					<p class="right">
+						<span>·</span> 去往文章页
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--third item-->
+		<div class="feed-item">
+			<div class="wrap">
+				<div class="item-source">
+					<p>来自话题</p>
+					<a href="#">软件开发</a>
+					<a href="#">编程语言</a>
+					<span class="item-avatar">
+						<img src="img/slicedImg/185d9c33d_m.jpg"/>
+					</span>
+				</div>
+				<h2 class="item-title">
+					<a href="#">如果抛开团队情况，在C#、C++、Java三者中间选择一门语言，做一款绘图软件，哪一门语言更适合？
+					</a>
+				</h2>
+				<p class="username">
+					<span class="name">eudemonia</span>
+					<span class="signature">say hello</span>
+				</p>
+				<div class="item-contents">
+					<p>如果类似CAD，应该是处理矢量图而不是位图。有个开源的软件Inkscape，可以参考一下：https://inkscape.org/en/如果性能不是问题，哪种语言熟悉用哪种语言好了。运行效率 C++>C#>Java。界面用C#开发最快捷，但是Java也可以做，用C++开发比较累。用哪种好取决于你们对哪个语言更熟悉。底层的图形处理算法。用C++效率最高，C#也应该可以搞定，Java性能会有点问题，如果实在要用Java可以采用Java UI + C++底层来解决。
+					</p>
+				</div>
+				<div class="item-contents-show">
+					<p>如果类似CAD，应该是处理矢量图而不是位图。有个开源的软件Inkscape，可以参考一下：https://inkscape.org/en/如果性能不是问题，哪种语言熟悉用哪种语言好了。运行效率 C++>C#>Java。界面用C#开发最快捷，但是Java也可以做，用C++开发比较要...
+						<span>显示全部</span>
+					</p>
+				</div>
+				<div class="item-bottom">
+					<p class="like">
+						<span>12</span> 赞同
+					</p>
+					<p class="followQuestion">
+						<span>+</span> 关注问题
+					</p>
+					<p class="comments">
+						<span>
+							<img src="img/icon/comments.svg"/>
+						</span>
+						<span>44</span> 条评论
+					</p>
+					<p class="thanks">
+						<span>
+							<img src="img/icon/感谢icon.svg"/>
+						</span> 感谢
+					</p>
+					<p class="favorite">
+						<span>...</span>
+					</p>
+					<p class="right">
+						<span>·</span> 作者保留权利
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!--footer-->
+		<footer class="n-footer">
+			<div class="wrap">
+				<p class="cover"></p>
+				<a href="#" class="more">更多</a>
+				<ul>
+					<li>
+						<a href="#">
+							<span>
+						<img src="img/icon/标签.svg"/>
+					</span> 我的收藏
+							<hahaha>2</hahaha>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>
+						<img src="img/icon/标签.svg"/>
+					</span> 我关注的问题
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>
+						<img src="img/icon/标签.svg"/>
+					</span> 邀请我回答的问题
+						</a>
+					</li>
+				</ul>
+				<!--second ul-->
+				<ul class="second-ul">
+					<li>
+						<a href="#">
+							<span>
+						<img src="img/icon/标签.svg"/>
+					</span>公共编辑动态
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>
+						<img src="img/icon/标签.svg"/>
+					</span> 社区服务中心
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>
+						<img src="img/icon/标签.svg"/>
+					</span> 版权服务中心
+						</a>
+					</li>
+				</ul>
+				<div class="zhuanlan">
+					<p>知乎专栏</p>
+					<p>
+						<img src="img/slicedImg/weekly.png" />
+						<a href="#">专栏 <b>·</b> 发现</a>
+
+					</p>
+				</div>
+
+				<div class="zhuanlan">
+					<p>知乎 Live</p>
+					<p>
+						<img src="img/首页 - 知乎_files/d74854f6ba0c257ce7cbe75f92926cb0_m.png" />
+						<a href="#">告诉你关于水球运动的一切</a>
+					</p>
+					<p>
+						<img src="img/首页 - 知乎_files/e872dc791_m.jpg" />
+						<a href="#">技术管理者面临的挑战</a>
+					</p>
+					<p>
+						<img src="img/首页 - 知乎_files/ab4a1b975e734288d2e507f81cdadb22_s.jpg" />
+						<a href="#">高分子专业那些事</a>
+					</p>
+
+				</div>
+				<div class="zhuanlan">
+					<p>知乎圆桌</p>
+					<p>
+						<img src="img/首页 - 知乎_files/hour.png" />
+						<a href="#">科学健身入门</a>
+					</p>
+					<p>
+						<img src="img/首页 - 知乎_files/7d5c590b6ce740a0a7359f4532f14928_xs.jpg" />
+						<a href="#">爸爸不在家</a>
+					</p>
+					<p>
+						<img src="img/首页 - 知乎_files/v2-335457e05dc74fa29e92731aed3cd1e5_s.jpg" />
+						<a href="#">艺术的跨界之旅</a>
+					</p>
+
+				</div>
+				<div class="zhuanlan">
+					<p>知乎书店</p>
+					<p>
+						<img src="img/首页 - 知乎_files/nacl.png" />
+						<a href="#">脑洞大开</a>
+					</p>
+					<p>
+						<img src="img/首页 - 知乎_files/v2-8cbc299fd20a378b9979e111ddffc140_s.jpg" />
+						<a href="#">跟三国人物学职场经济学</a>
+					</p>
+					<p>
+						<img src="img/首页 - 知乎_files/v2-8d4013300006430ae58238292c03ae34_s.jpg" />
+						<a href="#">刑事辩护指导书</a>
+					</p>
+
+				</div>
+
+			</div>
+		</footer>
+	</body>
+
+</html>

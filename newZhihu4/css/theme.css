@@ -1,0 +1,209 @@
+#appstore {
+  width: 100%;
+  height: 12.8rem;
+  font-size: 0.6rem;
+  padding-left: 0.5rem;
+}
+#appstore li {
+  width: 100%;
+  height: 1.44rem;
+  float: left;
+  margin-top: 0.4rem;
+}
+#appstore li p {
+  height: 1.44rem;
+  border: 1px solid #daecf5;
+  float: left;
+  margin: 0.1rem;
+  line-height: 1.44rem;
+  margin-right: 1.44rem;
+}
+#appstore li p span {
+  height: 1.44rem;
+  width: 1.44rem;
+  border: none;
+  background: white;
+  display: inline-block;
+  border-radius: 50%;
+}
+#appstore li p .left {
+  margin-left: -0.72rem;
+  border-left: 2px solid #daecf5;
+}
+#appstore li p .right {
+  margin-right: -0.72rem;
+  border-right: 2px solid #daecf5;
+}
+#appstore li p a {
+  height: 1.44rem;
+  display: inline-block;
+  position: relative;
+  top: -0.52rem;
+  color: #225599;
+  font-weight: bold;
+}
+.theme-active {
+  border-color: transparent;
+  border: none;
+  background: #225599;
+}
+.theme-active span {
+  background: #225599 !important;
+  border: none;
+}
+#theme-active {
+  color: white !important;
+  border: none;
+}
+#theme-baidu-search {
+  border: 1px solid #daecf5;
+}
+#theme-info-container li {
+  background: white;
+  border: none;
+  box-shadow: none;
+}
+#theme-info-container a {
+  color: #225599 !important;
+  text-shadow: none;
+  box-shadow: none;
+  font-size: 0.64rem;
+}
+#theme-weather-box {
+  width: 100%;
+  height: 12rem;
+  position: absolute;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #225599;
+  overflow: hidden;
+  padding-top: 0.6rem;
+  box-shadow: none;
+}
+#theme-weather-box input {
+  outline: none;
+  border: none;
+  height: 1.2rem;
+  float: left;
+  border: 1px solid #225599;
+  margin: 0.2rem;
+  box-shadow: none;
+}
+#theme-weather-box input[type=text] {
+  width: 10rem;
+  text-align: center;
+  border-radius: 5px;
+}
+#theme-weather-box input[type=button] {
+  width: 2.6rem;
+  background: #225599;
+  color: white;
+  font-size: 0.64rem;
+  border-radius: 5px;
+}
+#theme-weather-box ul {
+  margin-top: 0.7rem;
+}
+#theme-weather-box ul,
+#theme-weather-box li {
+  list-style: none;
+  width: 100%;
+}
+#theme-weather-box li {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.2rem;
+}
+#theme-weather-box li > span {
+  display: block;
+  width: 33.3333333%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  float: left;
+  font-size: 0.64rem !important;
+  color: #555555;
+}
+#theme-weather-close {
+  width: 1.8rem;
+  height: 1.2rem;
+  display: block;
+  line-height: 1.2rem;
+  font-size: 0.6rem;
+  color: white;
+  background: #0d77e4;
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.2rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+#wrapbox {
+  width: 100%;
+  padding-left: 0.4rem;
+}
+#wrapbox div {
+  display: inline-block;
+  float: left;
+  margin: 0.2rem;
+}
+/*hours*/
+#my3dspace-h {
+  -webkit-perspective: 200;
+  -webkit-perspective-origin: 50% 50%;
+  overflow: hidden;
+}
+#pagegroup-h {
+  width: 100px;
+  height: 100px;
+  /*margin: 0 auto;*/
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+/*minutes*/
+#my3dspace-m {
+  -webkit-perspective: 200;
+  -webkit-perspective-origin: 50% 50%;
+  overflow: hidden;
+}
+#pagegroup-m {
+  width: 100px;
+  height: 100px;
+  /*margin: 0 auto;*/
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+/*seconds*/
+#my3dspace {
+  -webkit-perspective: 200;
+  /*-webkit-perspective-origin: 50% 50%;*/
+  overflow: hidden;
+}
+#pagegroup {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+.page {
+  width: 100px;
+  height: 100px;
+  /*padding: 10px;*/
+  background-color: #0070CD;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+  position: absolute;
+  -webkit-transform-origin: bottom;
+  -webkit-transition: -webkit-transform 1s linear;
+  -webkit-transform: rotateX(90deg);
+}
+#page1 {
+  -webkit-transform-origin: bottom;
+  -webkit-transition: -webkit-transform 1s linear;
+}

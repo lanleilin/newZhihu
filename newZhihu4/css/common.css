@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #666666;
+}
+.wrap {
+  width: 14.2rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  border-bottom: 2px solid #cccccc;
+}

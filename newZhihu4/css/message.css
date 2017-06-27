@@ -1,0 +1,187 @@
+#msg-send {
+  width: 2.44rem !important;
+  height: 1.2rem !important;
+  background: #1879db;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-size: 0.48rem;
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 50%;
+  margin-top: -0.6rem;
+  line-height: 1.2rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid #0D6EB8;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.msg-content {
+  width: 100%;
+  margin-top: 0.32rem;
+  margin-bottom: 0.4rem;
+}
+.msg-content .msg-wrap {
+  width: 14.2rem;
+  border-bottom: 1px solid #cccccc;
+  margin: 0 auto;
+  float: left;
+  margin-left: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.msg-content .msg-wrap img {
+  width: 2.04rem;
+  height: 2.04rem;
+  border-radius: 5px;
+  float: left;
+}
+.msg-content .msg-wrap .msg-letter {
+  width: 11.88rem;
+  float: right;
+}
+.msg-content .msg-wrap .msg-letter .msg-header {
+  display: block;
+  width: 100%;
+  height: 1.36rem;
+}
+.msg-content .msg-wrap .msg-letter .msg-header li {
+  float: left;
+  font-size: 0.6rem;
+  margin-left: 0.2rem;
+}
+.msg-content .msg-wrap .msg-letter .msg-header li:nth-child(1) {
+  color: #225599;
+}
+.msg-content .msg-wrap .msg-letter p {
+  font-size: 0.64rem;
+  line-height: 1.7;
+}
+.msg-content .msg-wrap .msg-letter .msg-bottom {
+  display: block;
+  width: 100%;
+  height: 1.36rem;
+}
+.msg-content .msg-wrap .msg-letter .msg-bottom li {
+  float: left;
+  font-size: 0.6rem;
+  margin-left: 0.2rem;
+  color: #225599;
+}
+.msg-content .msg-wrap .msg-letter .msg-bottom li:nth-child(1) {
+  color: #cccccc;
+}
+.msg-harass {
+  width: 100%;
+  float: left;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.msg-harass p {
+  height: 1.92rem;
+  width: 13.8rem;
+  margin: 0 auto;
+  border: 1px solid #adcf66;
+  background: #f2fddb;
+  text-align: center;
+  line-height: 1.92rem;
+  font-size: 0.56rem;
+}
+.msg-dialog {
+  width: 100%;
+  height: 10.64rem;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+}
+.msg-dialog ul {
+  width: 100%;
+  height: 100%;
+}
+.msg-dialog ul li {
+  width: 100%;
+  margin-top: 0.4rem;
+}
+.msg-dialog ul li:nth-child(1) {
+  margin: 0;
+  background: #1474d4;
+  height: 1.44rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: white;
+  line-height: 1.44rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid #0D6EB8;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.2);
+  padding-left: 0.6rem;
+}
+.msg-dialog ul li:nth-child(1) span {
+  width: 0.68rem;
+  height: 0.68rem;
+  background: #0D6EB8;
+  float: right;
+  position: relative;
+  top: 50%;
+  margin-top: -0.34rem;
+  margin-right: 50px;
+  border-radius: 50%;
+}
+.msg-dialog ul li:nth-child(1) img {
+  width: 0.68rem;
+  height: 0.68rem;
+  position: relative;
+  top: -50%;
+  margin-top: 0.34rem;
+}
+.msg-dialog ul li:nth-child(2) {
+  height: 1.48rem;
+  font-size: 0.64rem;
+  padding-left: 0.6rem;
+  color: #999999;
+}
+.msg-dialog ul li:nth-child(2) input {
+  height: 100%;
+  width: 7.2rem;
+  outline: none;
+  margin-left: 0.4rem;
+}
+.msg-dialog ul li:nth-child(3) {
+  font-size: 0.64rem;
+  padding-left: 0.6rem;
+  color: #999999;
+}
+.msg-dialog ul li:nth-child(3) span {
+  position: relative;
+  top: -2.16rem;
+}
+.msg-dialog ul li:nth-child(3) textarea {
+  outline: none;
+  width: 12rem;
+  height: 2.6rem;
+}
+.msg-dialog ul li:nth-child(4) {
+  width: 100%;
+  height: 2.08rem;
+}
+.msg-dialog ul li:nth-child(4) button {
+  width: 1.92rem;
+  height: 1.44rem;
+  float: right;
+  text-align: center;
+  line-height: 1.44rem;
+  font-size: 0.6rem;
+  color: white;
+  margin-right: 0.8rem;
+  background: #197adb;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid #0D6EB8;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.msg-dialog ul li:nth-child(4) #msg-dialog-conceal {
+  background: white;
+  color: #197adb;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}

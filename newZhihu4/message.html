@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>N-私信</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/homePage.css" />
+		<link rel="stylesheet" type="text/css" href="css/message.css" />
+		<script type="text/javascript" src="js/common.js">
+		</script>
+
+		<script type="text/javascript" src="js/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="js/home.js">
+		</script>
+		<script type="text/javascript" src="js/message.js">
+		</script>
+		<script type="text/javascript" src="js/mainFuc.js">
+			
+		</script>
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<nav id="header">
+			<a href="#" id="logo">
+				<img src="img/slicedImg/zhihu-logo.png" />
+			</a>
+			<form action="" id="search">
+				<input type="text" name="" id="searchInput" value="" placeholder="搜索你感兴趣的内容" />
+				<span>
+						<img src="img/icon/搜索.svg"/>
+					</span>
+			</form>
+			<button id="ask">提问</button>
+		</nav>
+		<div id="top-nav">
+			<ul>
+				<li>
+					<a href="homePage.html">首页</a>
+				</li>
+				<li>
+					<a href="theme.html">话题</a>
+				</li>
+				<li>
+					<a href="find.html">发现</a>
+				</li>
+				<li>
+					<a href="#">消息
+						<span></span>
+					</a>
+				</li>
+				<li id="showSet">
+					<a href="#">我
+						<span></span>
+					</a>
+				</li>
+
+			</ul>
+
+		</div>
+		<ul id="me">
+			<li><a href="person.html">我的主页</a></li>
+			<li id="privateMessage">私信</li>
+			<li>设置</li>
+			<li id="signout">退出</li>
+			<li id="up"><img src="img/icon/arrow.svg" /></li>
+		</ul>
+		<div id="home-list-title">
+			<div id="list-title-wrap">
+				<a href="#">
+					<!--<img src="img/icon/nav-list.svg" />-->
+					<p>最近联系</p>
+				</a>
+
+				<botton id="msg-send">写私信</botton>
+			</div>
+		</div>
+
+		<!--first-->
+		<div class="msg-content" >
+			<div class="msg-wrap">
+				<img src="img/slicedImg/v2-178d2d967f20ca74f021c9a117770e0a_m.jpg" />
+				<div class="msg-letter">
+					<ul class="msg-header">
+						<li>知乎版权</li>
+						<li> ：亲爱的 </li>
+						<li>lanleilin</li>
+					</ul>
+					<p>
+						经过一年多的沟通、尝试和改进，知乎「微信公众号侵权投诉产品」终于正式上线了。现在起，您可以在知乎站内直接投诉侵犯自己版权的公众 号，24 小时内相关的侵权文章会被删除，而且该侵权行为还会被系统自动记录，累计后会有封号等处罚。欢迎移步知乎产品专栏了解更多（链接：
+					</p>
+					<ul class="msg-bottom">
+						<li>2016年1月5日</li>
+						<li>查看对话</li>
+						<li>回复</li>
+						<li>删除</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--test-->
+		<!--<div class="msg-content" id="insertHook">
+			<div class="msg-wrap">
+				<img src="img/slicedImg/v2-178d2d967f20ca74f021c9a117770e0a_m.jpg" />
+				<div class="msg-letter">
+					<ul class="msg-header">
+						<li id="msg-from-container">知乎版权</li>
+						<li> ：亲爱的 </li>
+						<li id="msg-to-name-container">lanleilin</li>
+					</ul>
+					<p id="msg-to-info-container">
+					</p>
+					<ul class="msg-bottom">
+						<li>2016年1月5日</li>
+						<li>查看对话</li>
+						<li>回复</li>
+						<li>删除</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>-->
+		<!--mask-->
+		<div class="mask"></div>
+		<!--second-->
+		<div class="msg-content">
+			<div class="msg-wrap">
+				<img src="img/slicedImg/v2-178d2d967f20ca74f021c9a117770e0a_m.jpg" />
+				<div class="msg-letter">
+					<ul class="msg-header">
+						<li>知乎版权</li>
+						<li> ：亲爱的 </li>
+						<li>lanleilin</li>
+					</ul>
+					<p>
+						经过一年多的沟通、尝试和改进，知乎「微信公众号侵权投诉产品」终于正式上线了。现在起，您可以在知乎站内直接投诉侵犯自己版权的公众 号，24 小时内相关的侵权文章会被删除，而且该侵权行为还会被系统自动记录，累计后会有封号等处罚。欢迎移步知乎产品专栏了解更多（链接：
+					</p>
+					<ul class="msg-bottom">
+						<li>2016年1月5日</li>
+						<li>查看对话</li>
+						<li>回复</li>
+						<li>删除</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="msg-harass">
+			<!--<p id="msg-load">
+				担心骚扰？可以
+				<a href="#">设置</a> 为「开启陌生人私信箱」。</p>-->
+				<p id="msg-load">
+				加载私信</p>
+		</div>
+		<div class="msg-dialog" id="msg-dialog-hide">
+			<ul>
+				<li>发送私信<span id="msg-dialog-close">
+					<img src="img/icon/close(2).svg"/>
+				</span> </li>
+				<li>发给<input type="text" placeholder="用户" id="msg-to-name" /> </li>
+				<li><span>内容</span> <textarea id="msg-to-info" name="" placeholder="内容" rows="" cols=""></textarea> </li>
+				<li>
+					<button id="msg-dialog-send">发送</button>
+					<button id="msg-dialog-conceal">取消</button>
+
+				</li>
+
+			</ul>
+		</div>
+		<div id="bottom-hook"></div>
+	</body>
+
+</html>
